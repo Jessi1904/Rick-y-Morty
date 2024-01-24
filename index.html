@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjss.cloudflare.com17aja/libs/fonts-awesome/5.15/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>
+        Rick And Morty
+    </title>
+    <link type="text/css" rel="stylesheet" charset="UTF-8"
+        href="https://www.gstatic.com/_/translate_http/_/ss/k=translate_http.tr.qhDXWpKopYk.L.W.O/am=wA/d=0/rs=AN8SPfq5gedF4FIOWZgYyMCNZA5tU966ig/m=el_main_css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0/js/materialize.min.js"></script>
+        <script src="./app.js"></script>
+
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="/" class="inherit">Rick And Morty</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li id="todos"><a>Todos</a></li>
+              <li id="mujeres"><a>Mujeres</a></li>
+              <li id="hombres"><a>Hombres</a></li>
+            </ul>
+          </div>
+    
+    </nav>
+    <main class="container-fuid">
+
+        <div id="contenedor" class="card-action" >
+            <span class="loader">
+            </span>
+            <p>
+                <font style=" vertical-align: inherit;"<font style="vertical-align: inherit;"> Total de personajes:
+                </font>
+                </font>
+                <span id="Total-personajes">
+                    <font style="vertical-align:inherit;">
+                        <font style="vertical-align:inherit;">20</font>
+
+                    </font>
+                </span>
+            </p>
+
+            <div id="root" class="row">
+                <div class="col s12 m6 l3">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://rickandmortyapi.com/api/character/avatar/1.jpeg">
+                        </div>
+                        <div class="card-content">
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Nombre: Rick Sánchez</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Género: Masculino</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Especie: Humana</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Estado: Vivo</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Origen: Tierra (C-137)</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Ubicación: Ciudadela de Ricks</font>
+                                </font>
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Ver más...</font>
+                                </font>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://rickandmortyapi.com/api/character/avatar/2.jpeg">
+                        </div>
+                        <div class="card-content">
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Nombre: Morty Smith</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Género: Masculino</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Especie: Humana</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Estado: Vivo</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Origen: desconocido</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Ubicación: Ciudadela de Ricks</font>
+                                </font>
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Ver más...</font>
+                                </font>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://rickandmortyapi.com/api/character/avatar/5.jpeg">
+                        </div>
+                        <div class="card-content">
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Nombre: Jerry Smith</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Género: Masculino</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Especie: Humana</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Estado: Vivo</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Origen: Tierra (Dimensión de Reemplazo)
+                                    </font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Ubicación: Tierra (dimensión de reemplazo)
+                                    </font>
+                                </font>
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Ver más...</font>
+                                </font>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://rickandmortyapi.com/api/character/avatar/7.jpeg">
+                        </div>
+                        <div class="card-content">
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Nombre: Abradolf Lincler</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Género: Masculino</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Especie: Humana</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Estado desconocido</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Origen: Tierra (Dimensión de Reemplazo)
+                                    </font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Ubicación: Dimensión del Monstruo Testicular
+                                    </font>
+                                </font>
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Ver más...</font>
+                                </font>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://rickandmortyapi.com/api/character/avatar/8.jpeg">
+                        </div>
+                        <div class="card-content">
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Nombre: Adjudicador Rick</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Género: Masculino</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Especie: Humana</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Estado: Muerto</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Origen: desconocido</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Ubicación: Ciudadela de Ricks</font>
+                                </font>
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Ver más...</font>
+                                </font>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://rickandmortyapi.com/api/character/avatar/9.jpeg">
+                        </div>
+                        <div class="card-content">
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Nombre: Director de agencia</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Género: Masculino</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Especie: Humana</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Estado: Muerto</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Origen: Tierra (Dimensión de Reemplazo)
+                                    </font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Ubicación: Tierra (dimensión de reemplazo)
+                                    </font>
+                                </font>
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Ver más...</font>
+                                </font>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://rickandmortyapi.com/api/character/avatar/10.jpeg">
+                        </div>
+                        <div class="card-content">
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Nombre: Alan Rails</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Género: Masculino</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Especie: Humana</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Estado: Muerto</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Origen: desconocido</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Ubicación: guarida de Worldender</font>
+                                </font>
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Ver más...</font>
+                                </font>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://rickandmortyapi.com/api/character/avatar/11.jpeg">
+                        </div>
+                        <div class="card-content">
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Nombre: Albert Einstein</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Género: Masculino</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Especie: Humana</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Estado: Muerto</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Origen: Tierra (C-137)</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Ubicación: Tierra (dimensión de reemplazo)
+                                    </font>
+                                </font>
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Ver más...</font>
+                                </font>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://rickandmortyapi.com/api/character/avatar/12.jpeg">
+                        </div>
+                        <div class="card-content">
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Nombre: Alejandro</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Género: Masculino</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Especie: Humana</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Estado: Muerto</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Origen: Tierra (C-137)</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Ubicación: Parque de la Anatomía</font>
+                                </font>
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Ver más...</font>
+                                </font>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://rickandmortyapi.com/api/character/avatar/14.jpeg">
+                        </div>
+                        <div class="card-content">
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Nombre: Alien Morty</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Género: Masculino</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Especie: extraterrestre</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Estado desconocido</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Origen: desconocido</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Ubicación: Ciudadela de Ricks</font>
+                                </font>
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Ver más...</font>
+                                </font>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://rickandmortyapi.com/api/character/avatar/15.jpeg">
+                        </div>
+                        <div class="card-content">
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Nombre: Alien Rick</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Género: Masculino</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Especie: extraterrestre</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Estado desconocido</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Origen: desconocido</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Ubicación: Ciudadela de Ricks</font>
+                                </font>
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Ver más...</font>
+                                </font>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://rickandmortyapi.com/api/character/avatar/16.jpeg">
+                        </div>
+                        <div class="card-content">
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Nombre: Cyborg Amish</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Género: Masculino</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Especie: extraterrestre</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Estado: Muerto</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Origen: desconocido</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Ubicación: Tierra (dimensión de reemplazo)
+                                    </font>
+                                </font>
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Ver más...</font>
+                                </font>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://rickandmortyapi.com/api/character/avatar/18.jpeg">
+                        </div>
+                        <div class="card-content">
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Nombre: Antena Morty</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Género: Masculino</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Especie: Humana</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Estado: Vivo</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Origen: desconocido</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Ubicación: Ciudadela de Ricks</font>
+                                </font>
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Ver más...</font>
+                                </font>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://rickandmortyapi.com/api/character/avatar/19.jpeg">
+                        </div>
+                        <div class="card-content">
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Nombre: Antena Rick</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Género: Masculino</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Especie: Humana</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Estado desconocido</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Origen: desconocido</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Ubicación: desconocida</font>
+                                </font>
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Ver más...</font>
+                                </font>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://rickandmortyapi.com/api/character/avatar/20.jpeg">
+                        </div>
+                        <div class="card-content">
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Nombre: Hormigas en mis ojos Johnson</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Género: Masculino</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Especie: Humana</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Estado desconocido</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Origen: desconocido</font>
+                                </font>
+                            </p>
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Ubicación: Cable Interdimensional</font>
+                                </font>
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Ver más...</font>
+                                </font>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="=container-paginator">
+        <p> Pagina actual:<span id="Pagina-actual">1</span></p>
+            <p>Total de paginas:<span id="Total de paginas">42</span></p>
+    </div>
+    <div class="pagination">
+        <button type="button" id="first-page" class="first-page pagination-button" aria-label="Página previa" disabled="">
+          <i class="fas fa-angle-double-left" aria-hidden="true"></i>
+        </button>
+        <button type="button" id="previus-page" class="previous-page pagination-button" aria-label="Página Anterior" disabled="">
+          <i class="fas fa-angle-left" aria-hidden="true"></i>
+        </button>
+        <button type="button" id="next-page" class="next-page pagination-button" aria-label="Siguiente ´Página">
+          <i class="fas fa-angle-right" aria-hidden="true"></i>
+        </button>
+        <button type="button" id="last-page" class="last-page pagination-button" aria-label="Última página">
+          <i class="fas fa-angle-double-right" aria-hidden="true"></i>
+        </button>
+      </div>
+      <footer class="page-footer color-black">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Footer</h5>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+         <div class="container"></div>
+        </footer>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0/js/materialize.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
